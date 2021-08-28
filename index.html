@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayman Hashim</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>   
 body{
+    background-color: rgb(32, 77, 114);
     display: flex;
     /*changing from Hor to Vert*/
     flex-direction: column;
@@ -20,14 +22,41 @@ body{
     overflow: hidden;
     margin: 0;
 }
+.view{
+        width: 100%;
+        height: 100vh;
+    }
+  .container{
+    display: flex;
+    /*changing from Hor to Vert*/
+    flex-direction: column;
+    /*To centering items horizentaly */
+    align-items: center;
+    /*To centering items vertically */
+    justify-content: center;
+    margin: auto;
+  }
+  .container h2,h3{
+        color: #FFF;
+        text-align: center;
+         background-color: rgba(67, 120, 180, 0.65);
+         border-radius: 1rem;
+         padding:10px;
+  }
 .dev{
-  width: 500px;
+  width: 300px;
+  border-radius: 1rem;
 }
   </style>
 </head>
 <body>
-  <h1>Wellcom to My Personal Website</h1>
-  <h3>My website will be live soon …</h3>
-  <img class="dev" src="https://cdn.dribbble.com/users/1059583/screenshots/4171367/coding-freak.gif" alt="Coding">  
+  <model-viewer class="view" src="./new.glb" alt="A 3D model of an astronaut"   ar ar-scale="fixed"  ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls >
+    <div class="container">
+       <h2>Wellcom to My Personal Website</h2>
+       <h3>My website will be live soon …</h3>
+       <!-- <img class="dev" src="https://cdn.dribbble.com/users/1059583/screenshots/4171367/coding-freak.gif" alt="Coding">   -->
+    </div>
+    </model-viewer>
+  
 </body>
 </html>
