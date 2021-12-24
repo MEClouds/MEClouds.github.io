@@ -22,6 +22,23 @@ function liveBackground(x){
 		
 	}
 
+
+	function toggle(){
+		pauseSong()
+        var popvid=document.querySelector('.popup')
+        var overlay=document.querySelector('.overlay')
+        overlay.classList.toggle('active')
+        popvid.classList.toggle('active')
+    }
+
+	function closeVideo(){
+		var popvid=document.querySelector('.popup')
+		var overlay=document.querySelector('.overlay')
+		overlay.classList.toggle('active')
+		popvid.classList.toggle('active')
+		document.getElementById('myFrame').src='';
+
+	}
 // Keep track of song
 let songIndex = 0;
 
@@ -31,7 +48,7 @@ let songIndex = 0;
 loadSong=(song)=>{
   title.innerText = song;
   audio.src = `music/${song}.mp3`;
-  cover.src = `images/img.jfif`;
+  cover.src = `images/img.jpg`;
 }
 
 // Initially load song details into DOM

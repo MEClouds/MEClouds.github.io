@@ -9,11 +9,37 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="style.css" />
+    
     <title>دعاء اليوم</title>
   </head>
   <body>
-    <h1 class="title">جمعة مباركة</h1>
+    <h1 class="title">مرحبا</h1>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+        <h1>فديو اليوم</h1> 
+        <i class="fa fa-youtube-play" style="font-size:48px;color:red;margin: 5px;"></i>
+        </div>
+        <div class="flip-card-back">
+          <h4>شارك الله في تجارته فتضاعفت أرباحه أضعافاً مضاعفة المهندس صلاح عطية</h4> 
+         
+            <a href="#" class="play-btn" onclick="toggle()">مشاهدة </a>
+    
+        </div>
+      </div>
+    </div>
+    
+        <div class="overlay"></div>
+        <div class="popup"> 
+      <iframe class="responsive-iframe" id="myFrame" src="https://www.youtube.com/embed/C3acB_MzThY"></iframe>
+       <img class="close-btn"  onclick="closeVideo()" src="https://www.pngfind.com/pngs/b/176-1761191_fail-png.png" alt="">
+    </div>
+
+
 
     <div class="music-container" id="music-container">
       <div class="music-info">
@@ -47,7 +73,6 @@
       </div>
     </div>
 
-    <small>by Ayman Hashim</small>
     
    
     

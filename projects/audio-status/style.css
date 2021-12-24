@@ -180,3 +180,135 @@ body {
     box-shadow: 0 0 0 23px rgba(232, 76, 61, 0);
   }
 }
+
+
+
+.popup {
+  visibility: hidden;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50%; /* 16:9 Aspect Ratio */
+  
+  }
+  .popup.active{
+      visibility: visible;
+      opacity: 1;
+  }
+ .close-btn{
+              position: absolute;
+              top: 30px;
+              right: 30px;
+              cursor: pointer;
+              width: 30px;
+              filter: invert();
+              z-index: 12;
+          }
+  
+  .responsive-iframe {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    border: none;
+    opacity: 1;
+    z-index: 12;
+  }
+  
+  .overlay.active{
+      background-color: rgba(0, 0, 0, 0.95);
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      opacity: 0.8;
+      z-index: 11;
+     
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 270px;
+    height: 270px;
+    perspective: 1000px;
+
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .flip-card-front {
+    background-color: rgba(187, 187, 187, 0.425);
+    color: rgb(20, 119, 17);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .flip-card-back {
+    background-color: #406a7a96;
+    border-radius: 1rem;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  .play-btn {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 1rem;
+    text-decoration: none;
+  }
+
+  
+  .play-btn:hover {
+    background-color: #07293d;
+    color: white;
+    cursor: pointer;
+  }
