@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayman Hashim</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <style>   
+  <style> 
+@import url("https://fonts.googleapis.com/css?family=Montserrat");  
 body{
     background-color: rgb(53, 61, 73);
     display: flex;
+ font-family: "Montserrat", sans-serif;
     /*changing from Hor to Vert*/
     flex-direction: column;
     /*To centering items horizentaly */
@@ -36,7 +38,7 @@ body{
     justify-content: center;
     margin: auto;
   }
-  .container h2,h3,h6,a{
+  .container h2,h3,h6{
         color: #FFF;
         text-align: center;
          background-color: rgba(179, 179, 211, 0.514);
@@ -44,12 +46,24 @@ body{
          padding:5px;
   }
   li{
-    display:inline;
-    margin-top: 12px;
+    display:inline-block;
+ margin-top:5px;
+   text-align: center;
+         background-color: rgba(179, 179, 211, 0.514);
+         border-left: 3px solid beige;
+         padding:2px;
+	
+	
   }
+li a{ text-decoration: none;
+color:#fff;
+} 
 .dev{
   width: 300px;
   border-radius: 1rem;
+}
+ul h3{
+width:280px;
 }
   </style>
   <script data-ad-client="ca-pub-4307853108743833" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -64,8 +78,9 @@ body{
     </div>
     </model-viewer>
     <div class="container">
-      <h3>some of my projects</h3>
+      
       <ul>
+	<h3>some of my projects</h3>
       <li><a href="https://ayman-hashim.me/projects/quotes">Quotes</a></li>
       <li><a href="https://ayman-hashim.me/projects/movieApp">movie App</a></li>
         <li><a href="https://ayman-hashim.me/projects/MusicApp">Music App</a></li>
