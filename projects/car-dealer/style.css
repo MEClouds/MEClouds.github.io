@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Naskh Arabic", serif;
+  background: url("https://i.pinimg.com/originals/e8/d9/4e/e8d94e1e8b6b530ad315e9385290141b.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+}
+.brand {
+  background-color: rgba(255, 255, 255, 0.665);
+  width: 280px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  margin-top: 0;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
+.brand2 {
+  width: 295px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.665);
+  border-radius: 1rem;
+  margin-bottom: 5px;
+}
+.about {
+  width: 280px;
+  padding: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.486);
+  margin-bottom: 5px;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.8;
+  color: rgb(245, 241, 241);
+}
+.main-heading {
+  margin: 0;
+}
+img {
+  margin: 3px;
+}
+.heading {
+  color: #00e676;
+  border-radius: 0.3rem;
+  background-color: rgba(5, 4, 4, 0.85);
+  padding: 3px;
+}
+.featres-heading {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+i {
+  margin: 3px;
+}
+li {
+  margin-bottom: 2px;
+  margin-right: 0;
+  color: gold;
+  list-style: none;
+  background-color: rgba(5, 4, 4, 0.85);
+  border-radius: 0.3rem;
+}
+
+.form {
+  width: 90%;
+  max-width: 280px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  opacity: 0.6;
+}
+.form:hover {
+  opacity: 0.9;
+}
+
+select {
+  margin: 3px;
+  border-radius: 0.5rem;
+  padding: 2px;
+}
+input {
+  margin: 3px;
+  border-radius: 0.5rem;
+  padding: 3px;
+}
+.callnowwhat {
+  cursor: pointer;
+  padding: 5px 0;
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+  line-height: 18px;
+  z-index: 9999;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  box-shadow: 0 0 0 0 #00e676;
+  border-radius: 22px;
+
+  background-color: #00e676;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.text-center {
+  text-align: center;
+}
+
+textarea {
+  border-radius: 0.3rem;
+  padding: 3px;
+}
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 23px rgba(232, 76, 61, 0);
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.copy-right {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}

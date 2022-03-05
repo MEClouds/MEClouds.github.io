@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <title>دلالة الخرطوم | للسيارات</title>
+  </head>
+  <body>
+    <div class="brand2"><img src="loog.png" alt="" width="140px" /></div>
+    <div class="form">
+      <label for="car-maker">مصنع السيارة</label>
+      <select id="parent_select">
+        <option></option>
+      </select>
+      <label for="car-model">موديل السيارة</label>
+      <select id="child_select"></select>
+      <label for="car-year">سنة التصنع</label>
+      <select id="year">
+        <option></option>
+        <option>2022</option>
+        <option>2021</option>
+        <option>2020</option>
+        <option>2019</option>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2012</option>
+        <option>2010</option>
+        <option>2009</option>
+      </select>
+      <!-- <label for="car-fule">نوع الوقود</label>
+    <select id="fule">
+        <option>بنزين</option>
+        <option>جازولين</option>
+    </select> -->
+
+      <label for="car-trans">نوع الوقود</label>
+      <div>
+        <input type="radio" name="fule-type" value="بنزين" />
+        <label for="customer"> بنزين </label>
+
+        <input type="radio" name="fule-type" value="جازولين" />
+        <label for="dealer"> جازولين</label>
+      </div>
+
+      <label for="car-trans"> ناقل الحركة</label>
+      <div>
+        <input type="radio" name="trans-type" value="يدوي" />
+        <label for="customer"> يدوي </label>
+
+        <input type="radio" name="trans-type" value="اوتماتيك" />
+        <label for="dealer"> اوتماتيك</label>
+      </div>
+
+      <label for="name">اسم العميل</label>
+
+      <input type="text" id="customer-name" />
+      <div>
+        <label for="customer-type"> هل انت :</label>
+        <input type="radio" name="customer-type" value="مشتري مباشر" />
+        <label for="customer"> مشتري مباشر</label>
+
+        <input type="radio" name="customer-type" value="وسيط" />
+        <label for="dealer"> وسيط</label>
+      </div>
+
+      <label for="phone">رقم التواصل</label>
+      <input type="number" name="phone" id="phone" />
+
+      <label for="budget">الميزانية المخصصة</label>
+      <input type="number" name="budget" id="budget" />
+      <label for="message">معلومات اضافية</label>
+      <textarea id="message" placeholder="معلومات اضافية"></textarea><br />
+      <a id="myLinkId" class="callnowwhat text-center font-raleway font-s-bold">
+        <i class="fa fa-whatsapp" aria-hidden="true"> بحث </i></a
+      >
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -68,6 +68,32 @@ color:#fff;
 ul h3{
 width:280px;
 }
+
+.custom-btn {
+  background: linear-gradient(120deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+  color: #fff;
+  padding: 10px;
+  border-radius: 1rem;
+  border: solid 2px transparent;
+  background-size: 400%;
+  animation: glowing 5s linear infinite;
+}
+.custom-btn:hover {
+  border: solid 2px #fff;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 70% 70%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
   </style>
   <script data-ad-client="ca-pub-4307853108743833" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   
@@ -75,22 +101,22 @@ width:280px;
 <body>
   <model-viewer class="view" src="./new.glb" alt="A 3D model of an astronaut"   ar ar-scale="fixed"  ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls >
     <div class="container">
-       <h2>Wellcom to My Personal Website</h2>
-       <h3>My New website will be live soon …</h3>
-        <a href="/home"><h3>home</h3> </a>
+       <!-- <h2>Wellcom to My Personal Website</h2>
+       <h3>My New website will be live soon …</h3> -->
+        <a class="custom-btn" href="/home">home </a>
        <!-- <img class="dev" src="https://cdn.dribbble.com/users/1059583/screenshots/4171367/coding-freak.gif" alt="Coding">   -->
     </div>
     </model-viewer>
     <div class="container">
       
-      <ul>
+      <!-- <ul>
 	<h3>some of my projects</h3>
       <li><a href="https://ayman-hashim.me/projects/quotes">Quotes</a></li>
       <li><a href="https://ayman-hashim.me/projects/movieApp">movie App</a></li>
         <li><a href="https://ayman-hashim.me/projects/MusicApp">Music App</a></li>
           <li><a href="https://ayman-hashim.me/projects/notes">notes App</a></li>
             <li><a href="https://ayman-hashim.me/projects/todo-list">todo-list</a></li>
-    </ul>
+    </ul> -->
    </div>
 </body>
 </html>
