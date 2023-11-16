@@ -49,6 +49,7 @@ header {
   color:  var(--third-color);
   margin-right: 20px;
   width:200px;
+  display:none;
   
 }
 
